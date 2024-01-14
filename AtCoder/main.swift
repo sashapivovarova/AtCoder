@@ -12,11 +12,12 @@ func readInts() -> [Int] {
 }
 
 func main() {
-    let a = Int(readLine()!)!
     let line = readInts()
-    let s = readLine()!
-
-    print(a + line[0] + line[1], s)
+    if line[0] * line[1] % 2 == 1{
+        return print("Odd")
+    } else {
+        return print("Even")
+    }
 }
 
 main()
